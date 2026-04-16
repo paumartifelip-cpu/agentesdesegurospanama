@@ -859,9 +859,11 @@ a {
     .hero-meta {
         flex-direction: column;
         width: 100%;
+        align-items: stretch;
     }
     .hero-meta-item {
-        padding: 14px 20px;
+        padding: 16px 20px;
+        align-items: flex-start;
     }
     .hero-meta-divider {
         width: 100%;
