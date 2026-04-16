@@ -143,5 +143,31 @@ tlInvestment.to(".investment-card", {
     repeat: -1
 });
 
-// 7. Refresh ScrollTrigger on resize mapping
+// 7. Speaker Profile Animation
+const tlSpeaker = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".speaker-profile",
+        start: "top 75%"
+    }
+});
+
+tlSpeaker.from(".speaker-image-reveal", {
+    clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+    duration: 1.2,
+    ease: "power4.inOut"
+})
+.from(".speaker-image-reveal img", {
+    scale: 1.3,
+    duration: 1.5,
+    ease: "power3.out"
+}, "-=1.2")
+.from(".gsap-speaker-text", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: "power2.out"
+}, "-=1.0");
+
+// 8. Refresh ScrollTrigger on resize mapping
 window.addEventListener("resize", () => ScrollTrigger.refresh());
