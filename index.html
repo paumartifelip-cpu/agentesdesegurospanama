@@ -3,196 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propuesta Premium - IA para Seguros</title>
-    <!-- Google Fonts for premium typography -->
+    <title>IA para Agentes de Seguros — Pau Martí Felip</title>
+    <meta name="description" content="Sesión práctica de Inteligencia Artificial para agentes de seguros en Panamá. 27 de Mayo, 2026.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Background Orbs -->
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <span class="logo-icon"></span> AI Seguros
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <div class="nav-logo-icon"></div>
+            <span>Pau Martí Felip</span>
         </div>
-        <a href="https://wa.me/34601108311" class="btn-primary btn-small">Agendar Llamada</a>
+        <div class="nav-links">
+            <a href="#metodologia">Metodología</a>
+            <a href="#ponente">Ponente</a>
+            <a href="#inversion">Inversión</a>
+        </div>
+        <a href="https://wa.me/34601108311" class="nav-cta" target="_blank">
+            Contactar
+            <span class="nav-cta-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </span>
+        </a>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero glass-panel">
-            <div class="badge">Propuesta Profesional</div>
-            <h1 class="gsap-title">Inteligencia Artificial <br>para Agentes de Seguros</h1>
-            <p class="hero-subtitle gsap-fade">Descubre cómo integrar la IA en tu día a día para vender más y ahorrar tiempo desde el primer día. Práctico y 100% aplicable, sin complicaciones.</p>
-            
-            <div class="event-details gsap-fade">
-                <div class="detail-item">
-                    <div>
-                        <strong>Fecha</strong><br>27 de Mayo, 2026
-                    </div>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Inteligencia Artificial<br>
+                Aplicada al Mundo<br>
+                de los Seguros.
+            </h1>
+            <p class="hero-subtitle">Descubre cómo integrar la IA en tu día a día para vender más y ahorrar tiempo. Práctico, aplicable y sin tecnicismos.</p>
+            <div class="hero-meta">
+                <div class="hero-meta-item">
+                    <span class="meta-label">Fecha</span>
+                    <span class="meta-value">27 Mayo, 2026</span>
                 </div>
-                <div class="detail-item">
-                    <div>
-                        <strong>Horario</strong><br>2:00 PM a 5:00 PM
-                    </div>
+                <div class="hero-meta-divider"></div>
+                <div class="hero-meta-item">
+                    <span class="meta-label">Horario</span>
+                    <span class="meta-value">2:00 – 5:00 PM</span>
                 </div>
-                <div class="detail-item">
-                    <div>
-                        <strong>Ubicación</strong><br>Panamá
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Intro Section -->
-        <section class="intro">
-            <div class="intro-content glass-panel gsap-scroll">
-                <h2>¿De qué va a ir la sesión?</h2>
-                <p>La sesión está pensada para que cualquier agente, aunque no tenga experiencia previa con IA, pueda entender cómo usarla para <strong>vender más y ahorrar tiempo</strong> desde el primer día.</p>
-                <div class="highlight-box">
-                    Lo explicaremos como si fuera una herramienta más de trabajo, igual que WhatsApp o el email.
+                <div class="hero-meta-divider"></div>
+                <div class="hero-meta-item">
+                    <span class="meta-label">Ubicación</span>
+                    <span class="meta-value">Panamá</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Use Cases (Grid) -->
-        <section class="use-cases">
-            <h2 class="section-title gsap-scroll">Ejemplos Reales que vas a ver en directo</h2>
-            
-            <div class="bento-grid">
-                <!-- Card 1 -->
-                <div class="bento-card bg-gradient-purple gsap-card">
-                    <h3>Responder rápido</h3>
-                    <p>En lugar de pensar qué decir o tardar minutos escribiendo, la IA te sugiere el mensaje perfecto listo para enviar.</p>
+    <!-- Intro Section -->
+    <section class="section section-white" id="intro">
+        <div class="container">
+            <div class="section-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h2 class="section-heading">
+                Sesión Diseñada Para<br>
+                Agentes de Seguros.
+            </h2>
+            <p class="section-desc">
+                La sesión está pensada para que cualquier agente, aunque no tenga experiencia previa con IA, pueda entender cómo usarla para <strong>vender más y ahorrar tiempo</strong> desde el primer día. Lo explicaremos como si fuera una herramienta más de trabajo, igual que WhatsApp o el email.
+            </p>
+        </div>
+    </section>
+
+    <!-- Use Cases — 3-Column Feature Grid -->
+    <section class="section section-light" id="metodologia">
+        <div class="container">
+            <div class="section-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h2 class="section-heading">
+                Ejemplos Reales Que Verás<br>
+                en Directo.
+            </h2>
+            <p class="section-desc">
+                Durante la sesión iremos mostrando ejemplos reales, prácticos y fáciles de entender aplicados directamente al mundo de los seguros.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3>Responder en Segundos</h3>
+                    <p>La IA te sugiere el mensaje perfecto listo para enviar, en lugar de pensar qué decir o tardar minutos escribiendo.</p>
                 </div>
-                
-                <!-- Card 2 -->
-                <div class="bento-card gsap-card">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
                     <h3>Seguimiento Automático</h3>
-                    <p>Sin olvidarte de nadie y sin tener que estar pendiente todo el día del teléfono.</p>
+                    <p>Sin olvidarte de nadie y sin tener que estar pendiente todo el día del teléfono. La IA organiza tu cartera.</p>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="bento-card bg-gradient-blue gsap-card col-span-2">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
                     <h3>Propuestas en Minutos</h3>
                     <p>Crea una propuesta de seguro en 1–2 minutos, en vez de tardar 30–40 minutos preparando documentos a mano.</p>
                 </div>
-
-                <!-- Card 4 -->
-                <div class="bento-card col-span-2 gsap-card">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
                     <h3>Comprender al Cliente</h3>
                     <p>Le das la información y te sugiere qué ofrecerle exactamente y cómo enfocar tu argumento comercial.</p>
                 </div>
-
-                <!-- Card 5 -->
-                <div class="bento-card bg-gradient-dark gsap-card">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
                     <h3>Preparar Reuniones</h3>
-                    <p>Con los puntos clave ya organizados en segundos y listos para cerrar.</p>
+                    <p>Con los puntos clave ya organizados en segundos y listos para cerrar la venta.</p>
                 </div>
-
-                <!-- Card 6 -->
-                <div class="bento-card gsap-card">
+                <div class="feature-card gsap-feature">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 9 8 12 2 12"/></svg>
+                    </div>
                     <h3>Tu Asistente Personal</h3>
-                    <p>Para escribir emails, organizar tareas y quitarte todo el trabajo repetitivo.</p>
+                    <p>Para escribir emails, organizar tareas y quitarte todo el trabajo repetitivo de encima.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Outcomes -->
-        <section class="outcomes glass-panel gsap-scroll">
-            <h2>🎯 ¿Qué se llevan los agentes?</h2>
-            <p class="subtitle">El objetivo no es solo que lo entiendan, sino que salgan pensando: <br><strong>"Esto lo puedo usar mañana mismo"</strong></p>
-            
-            <ul class="check-list">
-                <li><span>✓</span> Pueden cerrar más ventas</li>
-                <li><span>✓</span> Pueden responder más rápido que su competencia</li>
-                <li><span>✓</span> Pueden ahorrar varias horas cada semana</li>
-            </ul>
-
-            <div class="methodology">
-                <h3>Metodología 100% Práctica:</h3>
-                <div class="badge-list">
-                    <span class="glass-badge">Muy visual</span>
-                    <span class="glass-badge">Ejemplos en directo</span>
-                    <span class="glass-badge">Sin lenguaje técnico</span>
-                    <span class="glass-badge">Para situaciones reales</span>
-                </div>
+    <!-- Outcomes -->
+    <section class="section section-white" id="resultados">
+        <div class="container">
+            <div class="section-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
-        </section>
+            <h2 class="section-heading">
+                Lo Que Se Llevan<br>
+                Los Agentes.
+            </h2>
+            <p class="section-desc">
+                El objetivo no es solo que lo entiendan, sino que salgan pensando: <strong>"Esto lo puedo usar mañana mismo."</strong>
+            </p>
 
-        <!-- Speaker Profile -->
-        <section class="speaker-profile glass-panel gsap-scroll" id="ponente">
-            <div class="speaker-image-container">
-                <div class="speaker-image-reveal">
-                    <!-- Photo attached by user. Instructions tell them to name it pau.jpg -->
-                    <img src="pau.jpg" alt="Pau Martí Felip">
-                </div>
-            </div>
-            <div class="speaker-content">
-                <h2 class="gsap-speaker-text">Pau Martí Felip</h2>
-                <div class="speaker-title gsap-speaker-text">Profesor y Divulgador de Inteligencia Artificial</div>
-                <div class="gsap-speaker-text">
-                    <p>Enseña a personas y empresas a utilizar la IA para ganar más y trabajar con mayor libertad.</p>
-                    <div class="read-more-content" style="height: 0; overflow: hidden; opacity: 0;">
-                        <p>Ha formado a miles de profesionales en Europa y Latinoamérica, mostrando paso a paso cómo aplicar herramientas de inteligencia artificial en el día a día para emprender, automatizar procesos y crear nuevas oportunidades de negocio.</p>
-                        <p>En sus sesiones combina demostraciones en vivo, ejemplos reales y experimentos con herramientas de IA que permiten a los asistentes ver en minutos lo que antes parecía reservado a expertos.</p>
-                        <p>Mientras comparte su conocimiento, viaja por el mundo intercambiando formación en IA por alojamiento en casas, hostales y hoteles, demostrando en primera persona cómo la tecnología puede abrir nuevas formas de vivir y trabajar.</p>
-                        <p>Su trabajo ha sido destacado en medios de comunicación de España y Latinoamérica, donde explica cómo la IA está transformando la manera en que las personas crean, emprenden y generan ingresos.</p>
+            <div class="outcomes-grid">
+                <div class="outcome-item gsap-outcome">
+                    <span class="outcome-number">01</span>
+                    <div>
+                        <h4>Cerrar Más Ventas</h4>
+                        <p>Con argumentos preparados por IA y respuestas inmediatas.</p>
                     </div>
-                    <button class="btn-read-more" id="btnReadMore">Ver más</button>
                 </div>
-                
-                <div class="speaker-buttons gsap-speaker-text">
-                    <a href="https://wa.me/34601108311" target="_blank" class="btn-primary btn-whatsapp btn-small">Hablar por WhatsApp</a>
-                    <a href="https://www.youtube.com/@paumartifelip" target="_blank" class="btn-primary btn-youtube btn-small">Canal de YouTube</a>
+                <div class="outcome-item gsap-outcome">
+                    <span class="outcome-number">02</span>
+                    <div>
+                        <h4>Responder Más Rápido</h4>
+                        <p>Más rápido que su competencia, con mensajes optimizados.</p>
+                    </div>
+                </div>
+                <div class="outcome-item gsap-outcome">
+                    <span class="outcome-number">03</span>
+                    <div>
+                        <h4>Ahorrar Horas Cada Semana</h4>
+                        <p>Automatizando tareas repetitivas y seguimiento de clientes.</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Investment -->
-        <section id="contacto" class="investment gsap-scroll">
-            <div class="investment-card glass-panel premium-border">
-                <div class="pricing-header">
-                    <h2>Inversión y Honorarios</h2>
-                    <p>Para una sesión con un grupo de ~80 personas</p>
-                </div>
-                
-                <div class="price-box">
-                    <span class="old-price">Valor normal: $2,500 USD</span>
-                    <div class="current-price">
-                        <span class="currency">$</span>
-                        <span class="amount">1,799</span>
-                        <span class="currency">USD</span>
-                    </div>
-                    <p class="terms">+ gastos de desplazamiento (vuelos y alojamiento para 2 personas)</p>
-                </div>
+            <div class="methodology-badges">
+                <span class="method-badge">Muy visual</span>
+                <span class="method-badge">Ejemplos en directo</span>
+                <span class="method-badge">Sin lenguaje técnico</span>
+                <span class="method-badge">Situaciones reales</span>
+            </div>
+        </div>
+    </section>
 
-                <div class="includes">
-                    <h4>Incluye:</h4>
+    <!-- Speaker Profile -->
+    <section class="section section-navy" id="ponente">
+        <div class="container speaker-layout">
+            <div class="speaker-image-col">
+                <div class="speaker-img-wrapper gsap-speaker-img">
+                    <img src="109.jpg" alt="Pau Martí Felip — Profesor y Divulgador de IA">
+                </div>
+            </div>
+            <div class="speaker-content-col">
+                <div class="speaker-tag">Ponente</div>
+                <h2 class="speaker-name">Pau Martí Felip</h2>
+                <div class="speaker-role">Profesor y Divulgador de Inteligencia Artificial</div>
+                <p class="speaker-bio">Enseña a personas y empresas a utilizar la IA para ganar más y trabajar con mayor libertad.</p>
+                <div class="speaker-bio-extended" id="bioExtended">
+                    <p>Ha formado a miles de profesionales en Europa y Latinoamérica, mostrando paso a paso cómo aplicar herramientas de inteligencia artificial en el día a día para emprender, automatizar procesos y crear nuevas oportunidades de negocio.</p>
+                    <p>En sus sesiones combina demostraciones en vivo, ejemplos reales y experimentos con herramientas de IA que permiten a los asistentes ver en minutos lo que antes parecía reservado a expertos.</p>
+                    <p>Su trabajo ha sido destacado en medios de comunicación de España y Latinoamérica.</p>
+                </div>
+                <button class="btn-toggle" id="btnReadMore">Leer más</button>
+                <div class="speaker-actions">
+                    <a href="https://wa.me/34601108311" target="_blank" class="btn-outline">
+                        Hablar por WhatsApp
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@paumartifelip" target="_blank" class="btn-outline">
+                        Canal de YouTube
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment -->
+    <section class="section section-white" id="inversion">
+        <div class="container investment-layout">
+            <div class="investment-info">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h2 class="section-heading" style="text-align:left;">
+                    Inversión y<br>
+                    Honorarios.
+                </h2>
+                <p class="section-desc" style="text-align:left;">
+                    Para una sesión con un grupo de ~80 personas. Dinámica, práctica y 100% adaptada al sector seguros.
+                </p>
+            </div>
+            <div class="investment-card gsap-investment">
+                <div class="price-old">Valor normal: $2,500 USD</div>
+                <div class="price-current">
+                    <span class="price-symbol">$</span>
+                    <span class="price-amount">1,799</span>
+                    <span class="price-currency">USD</span>
+                </div>
+                <div class="price-note">+ gastos de desplazamiento (vuelos y alojamiento para 2 personas)</div>
+                <div class="price-includes">
+                    <h4>Incluye</h4>
                     <ul>
-                        <li>Sesión dinámica y 100% práctica de 3 horas.</li>
-                        <li>Preparación específica adaptada al sector seguros.</li>
+                        <li>Sesión dinámica y 100% práctica de 3 horas</li>
+                        <li>Preparación específica adaptada al sector seguros</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/34601108311" class="btn-primary large-action" style="display:inline-block; text-align:center;">Aprobar Propuesta por WhatsApp</a>
+                <a href="https://wa.me/34601108311" class="btn-solid" target="_blank">
+                    Aprobar Propuesta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2026 AI Seguros. Propuesta elaborada de manera profesional.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <span>© 2026 Pau Martí Felip</span>
+            <a href="https://wa.me/34601108311" target="_blank">Contactar por WhatsApp</a>
+        </div>
     </footer>
 
-    <!-- GSAP & Plugins -->
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
