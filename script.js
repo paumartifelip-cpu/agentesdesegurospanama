@@ -171,3 +171,35 @@ tlSpeaker.from(".speaker-image-reveal", {
 
 // 8. Refresh ScrollTrigger on resize mapping
 window.addEventListener("resize", () => ScrollTrigger.refresh());
+
+// 9. Ver Más (Read More) functionality with GSAP
+const btnReadMore = document.getElementById('btnReadMore');
+const readMoreContent = document.querySelector('.read-more-content');
+
+if (btnReadMore && readMoreContent) {
+    let isExpanded = false;
+    
+    btnReadMore.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        
+        if (isExpanded) {
+            gsap.to(readMoreContent, {
+                height: "auto",
+                opacity: 1,
+                duration: 0.5,
+                ease: "power2.out",
+                onComplete: () => ScrollTrigger.refresh() // Refresh ScrollTriggers after expanding
+            });
+            btnReadMore.textContent = "Ver menos";
+        } else {
+            gsap.to(readMoreContent, {
+                height: 0,
+                opacity: 0,
+                duration: 0.4,
+                ease: "power2.inOut",
+                onComplete: () => ScrollTrigger.refresh()
+            });
+            btnReadMore.textContent = "Ver más";
+        }
+    });
+}

@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-            <span class="logo-icon">✨</span> AI Seguros
+            <span class="logo-icon"></span> AI Seguros
         </div>
         <a href="https://wa.me/34601108311" class="btn-primary btn-small">Agendar Llamada</a>
     </nav>
@@ -36,19 +36,16 @@
             
             <div class="event-details gsap-fade">
                 <div class="detail-item">
-                    <span class="icon">📅</span>
                     <div>
                         <strong>Fecha</strong><br>27 de Mayo, 2026
                     </div>
                 </div>
                 <div class="detail-item">
-                    <span class="icon">⏰</span>
                     <div>
                         <strong>Horario</strong><br>2:00 PM a 5:00 PM
                     </div>
                 </div>
                 <div class="detail-item">
-                    <span class="icon">📍</span>
                     <div>
                         <strong>Ubicación</strong><br>Panamá
                     </div>
@@ -62,7 +59,7 @@
                 <h2>¿De qué va a ir la sesión?</h2>
                 <p>La sesión está pensada para que cualquier agente, aunque no tenga experiencia previa con IA, pueda entender cómo usarla para <strong>vender más y ahorrar tiempo</strong> desde el primer día.</p>
                 <div class="highlight-box">
-                    💡 Lo explicaremos como si fuera una herramienta más de trabajo, igual que WhatsApp o el email.
+                    Lo explicaremos como si fuera una herramienta más de trabajo, igual que WhatsApp o el email.
                 </div>
             </div>
         </section>
@@ -74,42 +71,36 @@
             <div class="bento-grid">
                 <!-- Card 1 -->
                 <div class="bento-card bg-gradient-purple gsap-card">
-                    <div class="card-icon">⚡</div>
                     <h3>Responder rápido</h3>
                     <p>En lugar de pensar qué decir o tardar minutos escribiendo, la IA te sugiere el mensaje perfecto listo para enviar.</p>
                 </div>
                 
                 <!-- Card 2 -->
                 <div class="bento-card gsap-card">
-                    <div class="card-icon">🤖</div>
                     <h3>Seguimiento Automático</h3>
                     <p>Sin olvidarte de nadie y sin tener que estar pendiente todo el día del teléfono.</p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bento-card bg-gradient-blue gsap-card col-span-2">
-                    <div class="card-icon">📑</div>
                     <h3>Propuestas en Minutos</h3>
                     <p>Crea una propuesta de seguro en 1–2 minutos, en vez de tardar 30–40 minutos preparando documentos a mano.</p>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="bento-card col-span-2 gsap-card">
-                    <div class="card-icon">🧠</div>
                     <h3>Comprender al Cliente</h3>
                     <p>Le das la información y te sugiere qué ofrecerle exactamente y cómo enfocar tu argumento comercial.</p>
                 </div>
 
                 <!-- Card 5 -->
                 <div class="bento-card bg-gradient-dark gsap-card">
-                    <div class="card-icon">🤝</div>
                     <h3>Preparar Reuniones</h3>
                     <p>Con los puntos clave ya organizados en segundos y listos para cerrar.</p>
                 </div>
 
                 <!-- Card 6 -->
                 <div class="bento-card gsap-card">
-                    <div class="card-icon">💼</div>
                     <h3>Tu Asistente Personal</h3>
                     <p>Para escribir emails, organizar tareas y quitarte todo el trabajo repetitivo.</p>
                 </div>
@@ -151,10 +142,13 @@
                 <div class="speaker-title gsap-speaker-text">Profesor y Divulgador de Inteligencia Artificial</div>
                 <div class="gsap-speaker-text">
                     <p>Enseña a personas y empresas a utilizar la IA para ganar más y trabajar con mayor libertad.</p>
-                    <p>Ha formado a miles de profesionales en Europa y Latinoamérica, mostrando paso a paso cómo aplicar herramientas de inteligencia artificial en el día a día para emprender, automatizar procesos y crear nuevas oportunidades de negocio.</p>
-                    <p>En sus sesiones combina demostraciones en vivo, ejemplos reales y experimentos con herramientas de IA que permiten a los asistentes ver en minutos lo que antes parecía reservado a expertos.</p>
-                    <p>Mientras comparte su conocimiento, viaja por el mundo intercambiando formación en IA por alojamiento en casas, hostales y hoteles, demostrando en primera persona cómo la tecnología puede abrir nuevas formas de vivir y trabajar.</p>
-                    <p>Su trabajo ha sido destacado en medios de comunicación de España y Latinoamérica, donde explica cómo la IA está transformando la manera en que las personas crean, emprenden y generan ingresos.</p>
+                    <div class="read-more-content" style="height: 0; overflow: hidden; opacity: 0;">
+                        <p>Ha formado a miles de profesionales en Europa y Latinoamérica, mostrando paso a paso cómo aplicar herramientas de inteligencia artificial en el día a día para emprender, automatizar procesos y crear nuevas oportunidades de negocio.</p>
+                        <p>En sus sesiones combina demostraciones en vivo, ejemplos reales y experimentos con herramientas de IA que permiten a los asistentes ver en minutos lo que antes parecía reservado a expertos.</p>
+                        <p>Mientras comparte su conocimiento, viaja por el mundo intercambiando formación en IA por alojamiento en casas, hostales y hoteles, demostrando en primera persona cómo la tecnología puede abrir nuevas formas de vivir y trabajar.</p>
+                        <p>Su trabajo ha sido destacado en medios de comunicación de España y Latinoamérica, donde explica cómo la IA está transformando la manera en que las personas crean, emprenden y generan ingresos.</p>
+                    </div>
+                    <button class="btn-read-more" id="btnReadMore">Ver más</button>
                 </div>
                 
                 <div class="speaker-buttons gsap-speaker-text">
@@ -185,8 +179,8 @@
                 <div class="includes">
                     <h4>Incluye:</h4>
                     <ul>
-                        <li>✨ Sesión dinámica y 100% práctica de 3 horas.</li>
-                        <li>✨ Preparación específica adaptada al sector seguros.</li>
+                        <li>Sesión dinámica y 100% práctica de 3 horas.</li>
+                        <li>Preparación específica adaptada al sector seguros.</li>
                     </ul>
                 </div>
                 <a href="https://wa.me/34601108311" class="btn-primary large-action" style="display:inline-block; text-align:center;">Aprobar Propuesta por WhatsApp</a>
